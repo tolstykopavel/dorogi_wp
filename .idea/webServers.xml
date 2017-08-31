@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="df69c5a5-1e0b-47ec-a941-a0441c0aa513" name="dorogi" url="http://vh102.hoster.by">
+        <fileTransfer host="vh102.hoster.by" port="21" rootFolder="/public_html/wp-content/themes/dorogi">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
