@@ -77,6 +77,32 @@
         </div>
     </section>
 
+    <nav class="block_navigation">
+        <div class="container">
+            <div class="row">
+                <?php
+                $prev_post = get_previous_post();
+                if($prev_post): ?>
+                    <div class="col-md-6 col-12">
+                        <?php $prev_title = strip_tags(str_replace('"', '', $prev_post->post_title)); ?>
+                        <a href="<?php echo get_permalink($prev_post->ID) ?>" title="<?php echo $prev_title ?>" class="site_button button_prev">Предыдущий маршрут</a>
+                    </div>
+                <?php endif; ?>
+
+                <?php
+                $next_post = get_next_post();
+                if($next_post): ?>
+                    <div class="col-md-6 col-12">
+                        <?php $next_title = strip_tags(str_replace('"', '', $next_post->post_title)); ?>
+                        <a href="<?php echo get_permalink($next_post->ID) ?>" title="<?php echo $next_title ?>" class="site_button button_next">Следующий маршрут</a>
+                    </div>
+                <?php  endif; ?>
+            </div>
+        </div>
+    </nav>
+
+
+
     
 
            

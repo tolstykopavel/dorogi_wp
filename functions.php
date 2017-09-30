@@ -29,3 +29,12 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+add_filter( 'body_class', 'custom_class' );
+function custom_class( $classes ) {
+    if ( is_page_template( 'template-mainpage.php' ) ) {
+        $classes[] = 'lock';
+    }
+    return $classes;
+}
+
